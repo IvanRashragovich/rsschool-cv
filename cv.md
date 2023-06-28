@@ -63,3 +63,11 @@ Belarus State Economic University
 Faculty of international economic relationships, world economy.
 
 ******
+
+#### Languages:
+
+Russian - native
+
+English - B2+
+
+French - A2
