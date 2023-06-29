@@ -16,18 +16,27 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0px;
 }
 
 /* Default styles end */
 
-/* Header styles start */
+/* #header styles start */
 
 #header {
     background-color: #343945;
 }
 
 .header-nav {
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav-item {
@@ -42,9 +51,139 @@ a {
 }
 
 a.nav-item:hover {
-    background-color: green;
+    background-color:#228B22;
     color: white;
     transition: 0.3s linear;
 }
 
-/* header styles end  */
+/* #header styles end  */
+
+/* #main styles start */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'left-content right-content right-content right-content'
+}
+
+.left-side {
+    grid-area: left-content;
+    color:white;
+    background-color: #343945;
+}
+
+.right-side {
+    grid-area: right-content;
+}
+
+.left-section {
+    background-color: #343942;
+}
+
+#contact > .left-section-title{
+    margin-top: -5px;
+}
+
+.left-section-title {
+    padding: 10px 62px;
+    background-color: rgba(25, 25, 25, 0.5);
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    left:0;
+    width: 20px;
+    height: 38px;
+    background-color: #228B22;
+}
+
+.section-title {
+    position: relative;
+    line-height: 38px;
+    font-size: 24px;
+    font-weight: 600;
+    padding-left:65px;
+    margin: 30px 0px;
+    background-color: rgba(25, 25, 25, 0.1);
+}
+
+.about-me-p {
+    margin-left: 60px;
+}
+
+.section-list {
+    margin-left: 65px;
+    padding-left: 0;
+}
+
+.list-item {
+    margin-bottom: 25px;
+    line-height: 2em;
+    list-style: none;
+}
+
+.list-item:last-child {
+    margin-bottom: 0;
+}
+
+.list-item > span {
+    font-weight: 700;
+}
+
+.title-section{
+    margin: 125px 80px 125px 60px;
+}
+
+.main-title{
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.main-title-description {
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+.skills-list {
+    margin: 0 60px;
+    list-style: disc;
+    line-height: 30px;
+}
+
+.strength-list {
+    margin: 0 60px;
+    list-style: disc;
+    line-height: 30px;
+}
+
+.code-pre {
+    margin: 40px 60px;
+    font-size: 14px;
+    background-color: rgba(25, 25, 25, 0.01);
+    border: 1px solid #DEDEDE;
+}
+
+/* #main styles end */
+
+/* footer */
+#footer {
+    background-color: #1e232c;
+    color:#FFFFFF;
+    padding: 30px 60px 30px 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-github{
+    position: relative;
+    text-decoration:underline;
+    align-items: center;
+}
+
+.github-logo {
+    fill:white;
+    padding-right: 10px;
+}
+
