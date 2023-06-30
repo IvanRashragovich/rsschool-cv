@@ -33,6 +33,7 @@ ul {
 
 #header {
     background-color: #343945;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
 }
 
 .header-nav {
@@ -87,6 +88,7 @@ a.nav-item:hover {
 .left-section-title {
     padding: 10px 62px;
     background-color: rgba(25, 25, 25, 0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2)
 }
 
 .section-title::before {
@@ -106,6 +108,7 @@ a.nav-item:hover {
     padding-left:65px;
     margin: 30px 0px;
     background-color: rgba(25, 25, 25, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1)
 }
 
 .about-me-p {
@@ -123,6 +126,21 @@ a.nav-item:hover {
     list-style: none;
 }
 
+.list-item-gmail::before {
+    position: absolute;
+    content: url(../img/Gmail_icon_\(2020\).svg);
+    width: 20px;
+    height: 20px;
+    left: 150px;
+}
+
+.list-item-discord::before {
+    position: absolute;
+    content: url(../img/discord-icon-svgrepo-com.svg);
+    left: 150px;
+    top: 450px;
+}
+
 .list-item:last-child {
     margin-bottom: 0;
 }
@@ -132,7 +150,7 @@ a.nav-item:hover {
 }
 
 .title-section{
-    margin: 125px 80px 125px 60px;
+    margin: 125px 80px 110px 60px;
 }
 
 .main-title{
@@ -148,14 +166,21 @@ a.nav-item:hover {
 
 .skills-list {
     margin: 0 60px;
-    list-style: disc;
     line-height: 30px;
 }
 
 .strength-list {
     margin: 0 60px;
-    list-style: disc;
     line-height: 30px;
+}
+
+.projects-list {
+    margin: 0 60px;
+    line-height: 30px;
+}
+
+.projects-list > li > a:hover {
+    text-decoration: underline;
 }
 
 .code-pre {
@@ -182,8 +207,16 @@ a.nav-item:hover {
     align-items: center;
 }
 
+.footer-github:hover {
+    text-decoration: none;
+}
+
 .github-logo {
     fill:white;
     padding-right: 10px;
+}
+
+.footer-github-link:hover {
+    text-decoration: none;
 }
 
