@@ -203,20 +203,15 @@ a.nav-item:hover {
 
 .footer-github{
     position: relative;
-    text-decoration:underline;
+    text-decoration: none;
     align-items: center;
 }
 
 .footer-github:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .github-logo {
     fill:white;
     padding-right: 10px;
 }
-
-.footer-github-link:hover {
-    text-decoration: none;
-}
-
