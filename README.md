@@ -1,2 +1,2 @@
-# rsschool-cv
-My CV for rs school
+https://ivanrashragovich.github.io/rsschool-cv/cv
+https://ivanrashragovich.github.io/rsschool-cv/
